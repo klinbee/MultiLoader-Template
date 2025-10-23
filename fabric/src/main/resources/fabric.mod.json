@@ -1,33 +1,32 @@
 {
-  "schemaVersion": 1,
-  "id": "${mod_id}",
-  "version": "${version}",
-  "name": "${mod_name}",
-  "description": "${description}",
-  "authors": [
-    "${mod_author}"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "${github_page}"
-  },
-  "license": "${license}",
-  "icon": "assets/${namespace}/${mod_id}.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "${group}.ExampleModFabric"
-    ]
-  },
-  "mixins": [
-    "${mod_id}.mixins.json",
-    "${mod_id}.fabric.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=${fabric_loader_version}",
-    "fabric-api": "*",
-    "minecraft": "${minecraft_version}",
-    "java": ">=${java_version}"
-  }
+    "schemaVersion": 1,
+    "id": "change_fabric_mod_json_id!",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "sources": "${github_page}"
+    },
+    "license": "${license}",
+    "icon": "assets/${namespace}/${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "${group}.ExampleMod"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=17"
+    }
 }
   
